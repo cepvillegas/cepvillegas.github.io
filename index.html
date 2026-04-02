@@ -150,7 +150,7 @@
 
     .hero {
       display: grid;
-      grid-template-columns: 1.25fr 0.9fr;
+      grid-template-columns: 1.0fr 1.15fr;
       gap: 28px;
       align-items: stretch;
       margin-bottom: 32px;
@@ -169,6 +169,24 @@
       padding: 48px;
       position: relative;
       overflow: hidden;
+    }
+
+    .hero-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      max-width: none;
+      width: 100%;
+      display: block;
+    }
+
+    .hero-role {
+     display: block;
+     flex: 1 1 100%;
+     width: 100%;
+     font-size: 1.0rem;
+     color: var(--muted);
+     margin-bottom: 18px;
     }
 
     .hero-main::before {
@@ -207,11 +225,12 @@
     }
 
     h1 {
-      font-size: clamp(2.7rem, 5vw, 4.8rem);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.2rem, 2.8vw, 2.4rem);
       line-height: 0.98;
       letter-spacing: -0.055em;
       margin: 0 0 18px;
-      max-width: 11ch;
+      max-width: 18ch;
     }
 
     .hero-text {
@@ -284,7 +303,7 @@
     }
 
     .hero-side {
-      padding: 28px;
+      padding: 30px;
       display: flex;
       flex-direction: column;
       gap: 18px;
@@ -303,6 +322,11 @@
       align-items: center;
       gap: 16px;
       margin-bottom: 20px;
+    }
+
+    .profile-info {
+      flex: 1;
+      min-width: 0;
     }
 
     .avatar {
@@ -696,8 +720,8 @@
             <img src="profile_500x500.jpg" alt="Cesar E. Perez Villegas">
           </div>
             <div>
-              <h2>Cesar E. Perez Villegas</h2>
-              <p> Researcher · Physicist · Developer </p>
+              <h2 class="hero-name">Cesar E. Perez Villegas</h2>
+              <p class="hero-role">Researcher · Physicist · Developer</p>
             </div>
           </div>
           <p>
@@ -708,13 +732,13 @@
         <div class="mini-grid">
           <div class="mini-card">
             <span class="label">Focus</span>
-            <strong>Electronic structure and excited-state theory</strong>
-            <p>GW, BSE, optical properties, real-time simulations, and scientific computing workflows.</p>
+            <strong>Electronic structure and excited-state phenomena</strong>
+            <p>GW, BSE, electron-phonon, and real-time simulations.</p>
           </div>
           <div class="mini-card">
             <span class="label">Tools</span>
-            <strong>Python, Yambo, Quantum ESPRESSO, data dashboards</strong>
-            <p>Numerical analysis, automation, visualization, and research-oriented software design.</p>
+            <strong> Open-Source software for quantum/classical properties</strong>
+            <p>Python, Yambo, Quantum ESPRESSO.</p>
           </div>
         </div>
       </aside>
